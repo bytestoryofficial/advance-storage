@@ -16,6 +16,7 @@ out/
 # Server resource packs — server content, never commit
 packs/
 *.zip
+temp.txt
 
 # Env
 .env

@@ -1,0 +1,881 @@
+{
+    components: {
+        "minecraft:custom_model_data": {
+            floats: [150118.0f]
+        },
+        "minecraft:item_name": {
+            extra: [{
+                extra: [
+                    {
+                        color: "#FF9A3C",
+                        underlined: 0b,
+                        text: "З",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#F8944C",
+                        underlined: 0b,
+                        text: "а",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#F18F5B",
+                        underlined: 0b,
+                        text: "б",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#E9896B",
+                        underlined: 0b,
+                        text: "ы",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#E2837A",
+                        underlined: 0b,
+                        text: "т",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#DB7D8A",
+                        underlined: 0b,
+                        text: "ы",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#D4789A",
+                        underlined: 0b,
+                        text: "й",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#CC72A9",
+                        underlined: 0b,
+                        text: " ",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#C56CB9",
+                        underlined: 0b,
+                        text: "с",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#BE66C8",
+                        underlined: 0b,
+                        text: "к",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#B761D8",
+                        underlined: 0b,
+                        text: "л",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#AF5BE7",
+                        underlined: 0b,
+                        text: "е",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                extra: [
+                    {
+                        color: "#A855F7",
+                        underlined: 0b,
+                        text: "п",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                underlined: 0b,
+                text: "",
+                bold: 0b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        },
+        "minecraft:lore": [{
+            extra: [
+                {
+                    extra: [
+                        {
+                            color: "#AAA8A8",
+                            underlined: 0b,
+                            text: "Ставится на пол",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            color: "#6C6C62",
+                            underlined: 0b,
+                            text: "Декор «Хэллоуин»",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            extra: [
+                                {
+                                    color: "#FFEEA2",
+                                    underlined: 0b,
+                                    text: "Информация:",
+                                    bold: 1b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            color: "#FFEEA2",
+                            underlined: 0b,
+                            text: "▪ ",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            extra: [
+                                {
+                                    color: "#D4D9D8",
+                                    underlined: 0b,
+                                    text: "Цена: ",
+                                    bold: 0b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            color: "#FFEEA2",
+                            extra: [
+                                {
+                                    color: "white",
+                                    text: "꒞",
+                                    font: "nexo:default"
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "200 ",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            color: "#FFEEA2",
+                            underlined: 0b,
+                            text: "▪ ",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            extra: [
+                                {
+                                    color: "#D4D9D8",
+                                    underlined: 0b,
+                                    text: "Продавец: ",
+                                    bold: 0b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            color: "#FFEEA2",
+                            underlined: 0b,
+                            text: "Seller1",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            color: "#FFEEA2",
+                            underlined: 0b,
+                            text: "▪ ",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            extra: [
+                                {
+                                    color: "#D4D9D8",
+                                    underlined: 0b,
+                                    text: "Истекает через: ",
+                                    bold: 0b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            color: "#FFEEA2",
+                            underlined: 0b,
+                            text: "6d. 19h. 25min. 50sec.",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }, {
+            extra: [
+                {
+                    extra: [
+                        {
+                            extra: [
+                                {
+                                    color: "#91F251",
+                                    underlined: 0b,
+                                    text: "[▶]",
+                                    bold: 0b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            color: "#D4D9D8",
+                            underlined: 0b,
+                            text: " ЛКМ, чтобы ",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            extra: [
+                                {
+                                    color: "#91F251",
+                                    underlined: 0b,
+                                    text: "купить",
+                                    bold: 0b,
+                                    strikethrough: 0b,
+                                    italic: 0b,
+                                    obfuscated: 0b
+                                }
+                            ],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        },
+                        {
+                            color: "#D4D9D8",
+                            underlined: 0b,
+                            text: ".",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        }],
+        "minecraft:item_model": "nexo:halloween_decor_tomb_stone_2",
+        "minecraft:custom_name": {
+            extra: [
+                {
+                    extra: [
+                        {
+                            extra: [{
+                                extra: [
+                                    {
+                                        color: "#FF9A3C",
+                                        underlined: 0b,
+                                        text: "З",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#F8944C",
+                                        underlined: 0b,
+                                        text: "а",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#F18F5B",
+                                        underlined: 0b,
+                                        text: "б",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#E9896B",
+                                        underlined: 0b,
+                                        text: "ы",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#E2837A",
+                                        underlined: 0b,
+                                        text: "т",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#DB7D8A",
+                                        underlined: 0b,
+                                        text: "ы",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#D4789A",
+                                        underlined: 0b,
+                                        text: "й",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#CC72A9",
+                                        underlined: 0b,
+                                        text: " ",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#C56CB9",
+                                        underlined: 0b,
+                                        text: "с",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#BE66C8",
+                                        underlined: 0b,
+                                        text: "к",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#B761D8",
+                                        underlined: 0b,
+                                        text: "л",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#AF5BE7",
+                                        underlined: 0b,
+                                        text: "е",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }, {
+                                extra: [
+                                    {
+                                        color: "#A855F7",
+                                        underlined: 0b,
+                                        text: "п",
+                                        bold: 1b,
+                                        strikethrough: 0b,
+                                        italic: 0b,
+                                        obfuscated: 0b
+                                    }
+                                ],
+                                underlined: 0b,
+                                text: "",
+                                bold: 0b,
+                                strikethrough: 0b,
+                                italic: 0b,
+                                obfuscated: 0b
+                            }],
+                            underlined: 0b,
+                            text: "",
+                            bold: 0b,
+                            strikethrough: 0b,
+                            italic: 0b,
+                            obfuscated: 0b
+                        }
+                    ],
+                    underlined: 0b,
+                    text: "",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            underlined: 0b,
+            text: "",
+            bold: 0b,
+            strikethrough: 0b,
+            italic: 0b,
+            obfuscated: 0b
+        },
+        "minecraft:custom_data": {
+            PublicBukkitValues: {
+                "nexo:id": "halloween_decor_tomb_stone_2",
+                "nexo:furniture": 1b
+            }
+        }
+    },
+    count: 1,
+    id: "minecraft:paper"
+}

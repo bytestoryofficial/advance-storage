@@ -1,0 +1,140 @@
+{
+    components: {
+        "minecraft:custom_model_data": {
+            floats: [
+                1002.0f
+            ]
+        },
+        "minecraft:lore": [
+            {
+                extra: [
+                    {
+                        color: "#8C8C8C",
+                        underlined: 0b,
+                        text: "Набор: Halloween 2024",
+                        bold: 0b,
+                        strikethrough: 0b,
+                        italic: 0b,
+                        obfuscated: 0b
+                    }
+                ],
+                text: ""
+            },
+            ""
+        ],
+        "minecraft:enchantments": {
+            "minecraft:sharpness": 6,
+            "minecraft:knockback": 1,
+            "minecraft:mending": 1,
+            "minecraft:unbreaking": 3,
+            "minecraft:looting": 3,
+            "minecraft:fire_aspect": 2,
+            "minecraft:sweeping_edge": 3
+        },
+        "minecraft:damage": 18,
+        "minecraft:custom_name": {
+            extra: [
+                {
+                    color: "#C4C4C4",
+                    underlined: 0b,
+                    text: "S",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#98C4CA",
+                    underlined: 0b,
+                    text: "o",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#6BC4D1",
+                    underlined: 0b,
+                    text: "u",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#3FC4D7",
+                    underlined: 0b,
+                    text: "l",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#12C4DD",
+                    underlined: 0b,
+                    text: "b",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#27BDE2",
+                    underlined: 0b,
+                    text: "e",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#3CB6E7",
+                    underlined: 0b,
+                    text: "n",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#51AFEB",
+                    underlined: 0b,
+                    text: "d",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#66A8F0",
+                    underlined: 0b,
+                    text: "e",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                },
+                {
+                    color: "#7BA1F5",
+                    underlined: 0b,
+                    text: "r",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        },
+        "minecraft:custom_data": {
+            PublicBukkitValues: {
+                "score:usage": 1,
+                "executableitems:ei-id": "halloween-ghost_sword"
+            }
+        },
+        "minecraft:repair_cost": 63
+    },
+    count: 1,
+    id: "minecraft:netherite_sword"
+}
