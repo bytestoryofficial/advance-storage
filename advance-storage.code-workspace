@@ -5,7 +5,7 @@
     { "name": "📦 shared", "path": "packages/shared" },
     { "name": "🧱 pack-tools", "path": "packages/pack-tools" },
     { "name": "🔧 config", "path": "packages/config" },
-    { "name": "🗂 root", "path": "." }
+    { "name": "🗂 root", "path": "." },
   ],
   "settings": {
     "files.eol": "\n",
@@ -16,10 +16,14 @@
     // в корневой папке прячем то, что уже открыто отдельными корнями
     "files.exclude": {
       "apps": true,
-      "packages": true
-    }
+      "packages": true,
+    },
   },
   "extensions": {
-    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "editorconfig.editorconfig"]
-  }
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "editorconfig.editorconfig",
+    ],
+  },
 }
