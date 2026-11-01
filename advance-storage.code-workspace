@@ -1,0 +1,25 @@
+{
+  "folders": [
+    { "name": "🌐 web", "path": "apps/web" },
+    { "name": "⚙️ api", "path": "apps/api" },
+    { "name": "📦 shared", "path": "packages/shared" },
+    { "name": "🧱 pack-tools", "path": "packages/pack-tools" },
+    { "name": "🔧 config", "path": "packages/config" },
+    { "name": "🗂 root", "path": "." }
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
+    "eslint.workingDirectories": [{ "mode": "auto" }],
+    // в корневой папке прячем то, что уже открыто отдельными корнями
+    "files.exclude": {
+      "apps": true,
+      "packages": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "editorconfig.editorconfig"]
+  }
+}
