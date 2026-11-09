@@ -13,7 +13,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "js/ts.tsdk.path": "node_modules/typescript/lib",
     "eslint.workingDirectories": [{ "mode": "auto" }],
-    // в корневой папке прячем то, что уже открыто отдельными корнями
     "files.exclude": {
       "apps": true,
       "packages": true,
