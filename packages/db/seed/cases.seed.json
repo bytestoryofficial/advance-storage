@@ -1,0 +1,2202 @@
+{
+  "source": "Коллекция кейсов page: built-in list + saved edits",
+  "cases": [
+    {
+      "name": "Стандартный кейс",
+      "nameUncertain": false,
+      "pageCaseId": "0",
+      "items": [
+        {
+          "name": "Басстионный компас",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "0-0"
+        },
+        {
+          "name": "Скалковый тотем",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "0-1"
+        },
+        {
+          "name": "Лопата рыбака",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "0-2"
+        },
+        {
+          "name": "Редстоун ключ",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "0-3"
+        },
+        {
+          "name": "Ключ от ранг. кейса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "0-4"
+        },
+        {
+          "name": "Мифич. ключ",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "0-5"
+        },
+        {
+          "name": "Косм. ключ",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "0-6"
+        },
+        {
+          "name": "+100 бл. р.",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "0-7"
+        },
+        {
+          "name": "+50 бл. р.",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "0-8"
+        },
+        {
+          "name": "+10 бл. р.",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "0-9"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Хранитель трёх стихий",
+      "nameUncertain": false,
+      "pageCaseId": "1",
+      "items": [
+        {
+          "name": "Оберег трёх стихий",
+          "nameUncertain": false,
+          "dropChancePercent": "0.083",
+          "slotOrder": 1,
+          "pageKey": "1-0"
+        },
+        {
+          "name": "Гнев глубин",
+          "nameUncertain": false,
+          "dropChancePercent": "0.083",
+          "slotOrder": 2,
+          "pageKey": "1-1"
+        },
+        {
+          "name": "Клинок Гнева Глубин",
+          "nameUncertain": false,
+          "dropChancePercent": "0.083",
+          "slotOrder": 3,
+          "pageKey": "1-2"
+        },
+        {
+          "name": "Шлем Исскажение",
+          "nameUncertain": false,
+          "dropChancePercent": "0.25",
+          "slotOrder": 4,
+          "pageKey": "1-3"
+        },
+        {
+          "name": "Щит души",
+          "nameUncertain": false,
+          "dropChancePercent": "0.25",
+          "slotOrder": 5,
+          "pageKey": "1-4"
+        },
+        {
+          "name": "Поножи великого воителя",
+          "nameUncertain": false,
+          "dropChancePercent": "0.25",
+          "slotOrder": 6,
+          "pageKey": "1-5"
+        },
+        {
+          "name": "След неуязвимости",
+          "nameUncertain": false,
+          "dropChancePercent": "0.25",
+          "slotOrder": 7,
+          "pageKey": "1-6"
+        },
+        {
+          "name": "Лук морской гидры",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 8,
+          "pageKey": "1-7"
+        },
+        {
+          "name": "Мистический иссушитель",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 9,
+          "pageKey": "1-8"
+        },
+        {
+          "name": "Коса триединства",
+          "nameUncertain": false,
+          "dropChancePercent": "3.125",
+          "slotOrder": 10,
+          "pageKey": "1-9"
+        },
+        {
+          "name": "Лезвие рассвета",
+          "nameUncertain": false,
+          "dropChancePercent": "3.125",
+          "slotOrder": 11,
+          "pageKey": "1-10"
+        },
+        {
+          "name": "Нить морей",
+          "nameUncertain": false,
+          "dropChancePercent": "4.5",
+          "slotOrder": 12,
+          "pageKey": "1-11"
+        },
+        {
+          "name": "Тайная сила теней",
+          "nameUncertain": false,
+          "dropChancePercent": "7.6",
+          "slotOrder": 13,
+          "pageKey": "1-12"
+        },
+        {
+          "name": "Удар небес",
+          "nameUncertain": false,
+          "dropChancePercent": "12.5",
+          "slotOrder": 14,
+          "pageKey": "1-13"
+        },
+        {
+          "name": "Копьё влад. водных глубин",
+          "nameUncertain": false,
+          "dropChancePercent": "12.5",
+          "slotOrder": 15,
+          "pageKey": "1-14"
+        },
+        {
+          "name": "Барьер вечной магии",
+          "nameUncertain": false,
+          "dropChancePercent": "16.67",
+          "slotOrder": 16,
+          "pageKey": "1-15"
+        },
+        {
+          "name": "Коготь земли",
+          "nameUncertain": false,
+          "dropChancePercent": "16.67",
+          "slotOrder": 17,
+          "pageKey": "1-16"
+        },
+        {
+          "name": "Стрела веч. тьмы",
+          "nameUncertain": false,
+          "dropChancePercent": "16.67",
+          "slotOrder": 18,
+          "pageKey": "1-17"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Война Света",
+      "nameUncertain": false,
+      "pageCaseId": "2",
+      "items": [
+        {
+          "name": "Легенд. божеств. крылья",
+          "nameUncertain": false,
+          "dropChancePercent": "0.5",
+          "slotOrder": 1,
+          "pageKey": "2-0"
+        },
+        {
+          "name": "Легенд. божеств. кирка",
+          "nameUncertain": false,
+          "dropChancePercent": "0.5",
+          "slotOrder": 2,
+          "pageKey": "2-1"
+        },
+        {
+          "name": "Кара небес",
+          "nameUncertain": false,
+          "dropChancePercent": "1",
+          "slotOrder": 3,
+          "pageKey": "2-2"
+        },
+        {
+          "name": "Поножи Вл. Св. Пути",
+          "nameUncertain": false,
+          "dropChancePercent": "1",
+          "slotOrder": 4,
+          "pageKey": "2-3"
+        },
+        {
+          "name": "Дыхание небес",
+          "nameUncertain": false,
+          "dropChancePercent": "1",
+          "slotOrder": 5,
+          "pageKey": "2-4"
+        },
+        {
+          "name": "Нагрудник Воина Света",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 6,
+          "pageKey": "2-5"
+        },
+        {
+          "name": "Небесный клинок",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 7,
+          "pageKey": "2-6"
+        },
+        {
+          "name": "Поножи Воина Света",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 8,
+          "pageKey": "2-7"
+        },
+        {
+          "name": "Меч Вечного Света",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 9,
+          "pageKey": "2-8"
+        },
+        {
+          "name": "Шлем Воина Света",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 10,
+          "pageKey": "2-9"
+        },
+        {
+          "name": "Вихрь Глубин",
+          "nameUncertain": false,
+          "dropChancePercent": "1.66",
+          "slotOrder": 11,
+          "pageKey": "2-10"
+        },
+        {
+          "name": "Нагруд. Вл. Св. Пути",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 12,
+          "pageKey": "2-11"
+        },
+        {
+          "name": "Лук Огня",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 13,
+          "pageKey": "2-12"
+        },
+        {
+          "name": "Крылья Вл. Св. Пути",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 14,
+          "pageKey": "2-13"
+        },
+        {
+          "name": "Ботинки Воина Света",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 15,
+          "pageKey": "2-14"
+        },
+        {
+          "name": "Шлем Вл. Св. Пути",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 16,
+          "pageKey": "2-15"
+        },
+        {
+          "name": "Лезвие Надежды",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 17,
+          "pageKey": "2-16"
+        },
+        {
+          "name": "Ботинки Вл. Св. Пути",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 18,
+          "pageKey": "2-17"
+        },
+        {
+          "name": "Пламенный Искатель",
+          "nameUncertain": false,
+          "dropChancePercent": "2.77",
+          "slotOrder": 19,
+          "pageKey": "2-18"
+        },
+        {
+          "name": "Лук Света",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 20,
+          "pageKey": "2-19"
+        },
+        {
+          "name": "Осколок  золотой звезды",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 21,
+          "pageKey": "2-20"
+        },
+        {
+          "name": "Разрушитель Тьмы",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 22,
+          "pageKey": "2-21"
+        },
+        {
+          "name": "Копьё Владыки Света",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 23,
+          "pageKey": "2-22"
+        },
+        {
+          "name": "Небесное касание",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 24,
+          "pageKey": "2-23"
+        },
+        {
+          "name": "Копьё небес, Буря",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 25,
+          "pageKey": "2-24"
+        },
+        {
+          "name": "Щит небесного огня",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 26,
+          "pageKey": "2-25"
+        },
+        {
+          "name": "Топор небесного Титана",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 27,
+          "pageKey": "2-26"
+        },
+        {
+          "name": "Посох Архангела",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 28,
+          "pageKey": "2-27"
+        },
+        {
+          "name": "Щит Света",
+          "nameUncertain": false,
+          "dropChancePercent": "7.5",
+          "slotOrder": 29,
+          "pageKey": "2-28"
+        }
+      ],
+      "kind": "case",
+      "packSet": "fairy"
+    },
+    {
+      "name": "Мистический кейс",
+      "nameUncertain": false,
+      "pageCaseId": "3",
+      "items": [
+        {
+          "name": "Элитры Крилья Попугая",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 1,
+          "pageKey": "3-0"
+        },
+        {
+          "name": "Элитры Крилья Дракона",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 2,
+          "pageKey": "3-1"
+        },
+        {
+          "name": "Элитры Фантома",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 3,
+          "pageKey": "3-2"
+        },
+        {
+          "name": "Элитры  пчёл",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 4,
+          "pageKey": "3-3"
+        },
+        {
+          "name": "Элитры  Тихони",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 5,
+          "pageKey": "3-4"
+        },
+        {
+          "name": "Элитры Вредины",
+          "nameUncertain": false,
+          "dropChancePercent": "0.042",
+          "slotOrder": 6,
+          "pageKey": "3-5"
+        },
+        {
+          "name": "Мешочек с монетами",
+          "nameUncertain": false,
+          "dropChancePercent": "0.5",
+          "slotOrder": 7,
+          "pageKey": "3-6"
+        },
+        {
+          "name": "Злоб. ключ испытаний",
+          "nameUncertain": false,
+          "dropChancePercent": "0.5",
+          "slotOrder": 8,
+          "pageKey": "3-7"
+        },
+        {
+          "name": "Пояс верности",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 9,
+          "pageKey": "3-8"
+        },
+        {
+          "name": "Щервудский лук",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 10,
+          "pageKey": "3-9"
+        },
+        {
+          "name": "Осколок метеорита",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 11,
+          "pageKey": "3-10"
+        },
+        {
+          "name": "Stahlhelm",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 12,
+          "pageKey": "3-11"
+        },
+        {
+          "name": "Рыцарская кираса",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 13,
+          "pageKey": "3-12"
+        },
+        {
+          "name": "Шлем водолаза",
+          "nameUncertain": false,
+          "dropChancePercent": "0.417",
+          "slotOrder": 14,
+          "pageKey": "3-13"
+        },
+        {
+          "name": "+100 бл. рез.",
+          "nameUncertain": false,
+          "dropChancePercent": "1.56",
+          "slotOrder": 15,
+          "pageKey": "3-14"
+        },
+        {
+          "name": "Catanya~ (yellow)",
+          "nameUncertain": false,
+          "dropChancePercent": "1.56",
+          "slotOrder": 16,
+          "pageKey": "3-15"
+        },
+        {
+          "name": "Dragon Slayer",
+          "nameUncertain": false,
+          "dropChancePercent": "1.56",
+          "slotOrder": 17,
+          "pageKey": "3-16"
+        },
+        {
+          "name": "+50 бл. рез.",
+          "nameUncertain": false,
+          "dropChancePercent": "1.56",
+          "slotOrder": 18,
+          "pageKey": "3-17"
+        },
+        {
+          "name": "Антигравит. ботинки",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 19,
+          "pageKey": "3-18"
+        },
+        {
+          "name": "Штаны за 40 грн",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 20,
+          "pageKey": "3-19"
+        },
+        {
+          "name": "+10 бл. рез.",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 21,
+          "pageKey": "3-20"
+        },
+        {
+          "name": "Лещ",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 22,
+          "pageKey": "3-21"
+        },
+        {
+          "name": "Секатор v.4",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 23,
+          "pageKey": "3-22"
+        },
+        {
+          "name": "Римский Скутум",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 24,
+          "pageKey": "3-23"
+        },
+        {
+          "name": "Король Понтара",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 25,
+          "pageKey": "3-24"
+        },
+        {
+          "name": "Мечта пиромана",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 26,
+          "pageKey": "3-25"
+        },
+        {
+          "name": "Жилетка работяги",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 27,
+          "pageKey": "3-26"
+        },
+        {
+          "name": "Быстрый гонзалес",
+          "nameUncertain": false,
+          "dropChancePercent": "10",
+          "slotOrder": 28,
+          "pageKey": "3-27"
+        },
+        {
+          "name": "Топор Вайтран",
+          "nameUncertain": false,
+          "dropChancePercent": "10",
+          "slotOrder": 29,
+          "pageKey": "3-28"
+        },
+        {
+          "name": "Алмаз. бард",
+          "nameUncertain": false,
+          "dropChancePercent": "10",
+          "slotOrder": 30,
+          "pageKey": "3-29"
+        },
+        {
+          "name": "Лучший из худших",
+          "nameUncertain": false,
+          "dropChancePercent": "10",
+          "slotOrder": 31,
+          "pageKey": "3-30"
+        },
+        {
+          "name": "Волш. палочка",
+          "nameUncertain": false,
+          "dropChancePercent": "10",
+          "slotOrder": 32,
+          "pageKey": "3-31"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Кейс Чёрного Бахамута",
+      "nameUncertain": false,
+      "pageCaseId": "4",
+      "items": [
+        {
+          "name": "Крылья Бахамута",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 1,
+          "pageKey": "4-0"
+        },
+        {
+          "name": "Нагрудник Апокалипсиса",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 2,
+          "pageKey": "4-1"
+        },
+        {
+          "name": "Долабра Зависти",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 3,
+          "pageKey": "4-2"
+        },
+        {
+          "name": "Дрожь земли",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 4,
+          "pageKey": "4-3"
+        },
+        {
+          "name": "Клыки Дракона",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 5,
+          "pageKey": "4-4"
+        },
+        {
+          "name": "Раскат тьмы",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 6,
+          "pageKey": "4-5"
+        },
+        {
+          "name": "Пата Смерти",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 7,
+          "pageKey": "4-6"
+        },
+        {
+          "name": "Алебарда Алчности",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 8,
+          "pageKey": "4-7"
+        },
+        {
+          "name": "Боевая бита Бахамута",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 9,
+          "pageKey": "4-8"
+        },
+        {
+          "name": "Рёв Бахамута",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 10,
+          "pageKey": "4-9"
+        },
+        {
+          "name": "Галея Мрака",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 11,
+          "pageKey": "4-10"
+        },
+        {
+          "name": "Кираса Мрака",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 12,
+          "pageKey": "4-11"
+        },
+        {
+          "name": "Лапы Мрака",
+          "nameUncertain": false,
+          "dropChancePercent": "6.25",
+          "slotOrder": 13,
+          "pageKey": "4-12"
+        },
+        {
+          "name": "Когти Мрака",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 14,
+          "pageKey": "4-13"
+        },
+        {
+          "name": "Изгиб Воителя",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 15,
+          "pageKey": "4-14"
+        },
+        {
+          "name": "Ярость Бахамута",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 16,
+          "pageKey": "4-15"
+        },
+        {
+          "name": "Хвост Расскаяния",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 17,
+          "pageKey": "4-16"
+        },
+        {
+          "name": "Копьё Чёрн. Бахамута",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 18,
+          "pageKey": "4-17"
+        },
+        {
+          "name": "Глаз Тирании",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 19,
+          "pageKey": "4-18"
+        },
+        {
+          "name": "Вуда Жадности",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 20,
+          "pageKey": "4-19"
+        },
+        {
+          "name": "Чешуя безупречности",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 21,
+          "pageKey": "4-20"
+        },
+        {
+          "name": "Иглы дракона",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 22,
+          "pageKey": "4-21"
+        }
+      ],
+      "kind": "case",
+      "packSet": "bahamut"
+    },
+    {
+      "name": "Кейс Шляпника",
+      "nameUncertain": false,
+      "pageCaseId": "5",
+      "items": [
+        {
+          "name": "Крылья Вираж Зазеркалья",
+          "nameUncertain": false,
+          "dropChancePercent": "0.83",
+          "slotOrder": 1,
+          "pageKey": "5-0"
+        },
+        {
+          "name": "Перчатка Хватка Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "0.83",
+          "slotOrder": 2,
+          "pageKey": "5-1"
+        },
+        {
+          "name": "Шляпа Время пить Чай",
+          "nameUncertain": false,
+          "dropChancePercent": "0.83",
+          "slotOrder": 3,
+          "pageKey": "5-2"
+        },
+        {
+          "name": "Меч Лезвие Чешира",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 4,
+          "pageKey": "5-3"
+        },
+        {
+          "name": "Булава Взрыв Хохота",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 5,
+          "pageKey": "5-4"
+        },
+        {
+          "name": "Топор Казнь Дамы Пик",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 6,
+          "pageKey": "5-5"
+        },
+        {
+          "name": "Кирка Разрушитель Иллюзий",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 7,
+          "pageKey": "5-6"
+        },
+        {
+          "name": "Лопата Искатель Истины",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 8,
+          "pageKey": "5-7"
+        },
+        {
+          "name": "Большой меч Грань Безумия",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 9,
+          "pageKey": "5-8"
+        },
+        {
+          "name": "Нож Перо Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 10,
+          "pageKey": "5-9"
+        },
+        {
+          "name": "Алебарда Стража Зазеркалья",
+          "nameUncertain": false,
+          "dropChancePercent": "1.25",
+          "slotOrder": 11,
+          "pageKey": "5-10"
+        },
+        {
+          "name": "Шлем Маска Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "5",
+          "slotOrder": 12,
+          "pageKey": "5-11"
+        },
+        {
+          "name": "Нагрудник Жилет",
+          "nameUncertain": false,
+          "dropChancePercent": "5",
+          "slotOrder": 13,
+          "pageKey": "5-12"
+        },
+        {
+          "name": "Поножи Карточный Шаг",
+          "nameUncertain": false,
+          "dropChancePercent": "5",
+          "slotOrder": 14,
+          "pageKey": "5-13"
+        },
+        {
+          "name": "Ботинки Прыжок Иллюзий",
+          "nameUncertain": false,
+          "dropChancePercent": "5",
+          "slotOrder": 15,
+          "pageKey": "5-14"
+        },
+        {
+          "name": "Шляпа Цилиндр 10 на 6",
+          "nameUncertain": false,
+          "dropChancePercent": "5",
+          "slotOrder": 16,
+          "pageKey": "5-15"
+        },
+        {
+          "name": "Лук Иллюзий",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 17,
+          "pageKey": "5-16"
+        },
+        {
+          "name": "Копьё Игла Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 18,
+          "pageKey": "5-17"
+        },
+        {
+          "name": "Коса Жатва Времени",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 19,
+          "pageKey": "5-18"
+        },
+        {
+          "name": "Молот Судьба Зазеркалья",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 20,
+          "pageKey": "5-19"
+        },
+        {
+          "name": "Дубина Чеширский Оскал",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 21,
+          "pageKey": "5-20"
+        },
+        {
+          "name": "Рыбол. удочка Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 22,
+          "pageKey": "5-21"
+        },
+        {
+          "name": "Щит Зеркало Шляпника",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 23,
+          "pageKey": "5-22"
+        },
+        {
+          "name": "Мотыга Садовника Королевы",
+          "nameUncertain": false,
+          "dropChancePercent": "7.8",
+          "slotOrder": 24,
+          "pageKey": "5-23"
+        }
+      ],
+      "kind": "case",
+      "packSet": "mad_hatter"
+    },
+    {
+      "name": "Хеллоуинский кейс",
+      "nameUncertain": false,
+      "pageCaseId": "6",
+      "items": [
+        {
+          "name": "Тыквенный ирокез",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 1,
+          "pageKey": "6-0"
+        },
+        {
+          "name": "Рваные краги",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 2,
+          "pageKey": "6-1"
+        },
+        {
+          "name": "Гнилой аккорд",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 3,
+          "pageKey": "6-2"
+        },
+        {
+          "name": "Шляпа безумного ученого",
+          "nameUncertain": false,
+          "dropChancePercent": "0.8",
+          "slotOrder": 4,
+          "pageKey": "6-3"
+        },
+        {
+          "name": "Скальпель безумного ученого",
+          "nameUncertain": false,
+          "dropChancePercent": "0.8",
+          "slotOrder": 5,
+          "pageKey": "6-4"
+        },
+        {
+          "name": "Эликсир слабоумия и отвеги",
+          "nameUncertain": false,
+          "dropChancePercent": "0.8",
+          "slotOrder": 6,
+          "pageKey": "6-5"
+        },
+        {
+          "name": "Винты Франкентшейна",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 7,
+          "pageKey": "6-6"
+        },
+        {
+          "name": "Вилы высокого напряжения",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 8,
+          "pageKey": "6-7"
+        },
+        {
+          "name": "Предохранители Франкентшейна",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 9,
+          "pageKey": "6-8"
+        },
+        {
+          "name": "Корона Лорда Демонов",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 10,
+          "pageKey": "6-9"
+        },
+        {
+          "name": "Коса Короля Демонов",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 11,
+          "pageKey": "6-10"
+        },
+        {
+          "name": "Крылья Короля Демонов",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 12,
+          "pageKey": "6-11"
+        },
+        {
+          "name": "Шляпа Кошки-ведьмы",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 13,
+          "pageKey": "6-12"
+        },
+        {
+          "name": "Искристый коготь",
+          "nameUncertain": false,
+          "dropChancePercent": "0.3",
+          "slotOrder": 14,
+          "pageKey": "6-13"
+        },
+        {
+          "name": "Хвост удачи",
+          "nameUncertain": false,
+          "dropChancePercent": "0.63",
+          "slotOrder": 15,
+          "pageKey": "6-14"
+        },
+        {
+          "name": "Люстра ночной кошмар",
+          "nameUncertain": false,
+          "dropChancePercent": "0.63",
+          "slotOrder": 16,
+          "pageKey": "6-15"
+        },
+        {
+          "name": "Солнце мертвых",
+          "nameUncertain": false,
+          "dropChancePercent": "0.63",
+          "slotOrder": 17,
+          "pageKey": "6-16"
+        },
+        {
+          "name": "Страж огорода",
+          "nameUncertain": false,
+          "dropChancePercent": "1.2",
+          "slotOrder": 18,
+          "pageKey": "6-17"
+        },
+        {
+          "name": "Кошелёк или жизнь",
+          "nameUncertain": false,
+          "dropChancePercent": "1.2",
+          "slotOrder": 19,
+          "pageKey": "6-18"
+        },
+        {
+          "name": "Банка с арахнидом",
+          "nameUncertain": false,
+          "dropChancePercent": "1.2",
+          "slotOrder": 20,
+          "pageKey": "6-19"
+        },
+        {
+          "name": "Призрачный канделбяр",
+          "nameUncertain": false,
+          "dropChancePercent": "1.2",
+          "slotOrder": 21,
+          "pageKey": "6-20"
+        },
+        {
+          "name": "Марин. кадавр",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 22,
+          "pageKey": "6-21"
+        },
+        {
+          "name": "Верево Салема",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 23,
+          "pageKey": "6-22"
+        },
+        {
+          "name": "Хватка мертвеца",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 24,
+          "pageKey": "6-23"
+        },
+        {
+          "name": "Нимбус-666",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 25,
+          "pageKey": "6-24"
+        },
+        {
+          "name": "Проклятый холст",
+          "nameUncertain": false,
+          "dropChancePercent": "5.7",
+          "slotOrder": 26,
+          "pageKey": "6-25"
+        },
+        {
+          "name": "Веселый роджер",
+          "nameUncertain": false,
+          "dropChancePercent": "6.7",
+          "slotOrder": 27,
+          "pageKey": "6-26"
+        },
+        {
+          "name": "Роза",
+          "nameUncertain": false,
+          "dropChancePercent": "5.7",
+          "slotOrder": 28,
+          "pageKey": "6-27"
+        },
+        {
+          "name": "Хватка мертвеца",
+          "nameUncertain": false,
+          "dropChancePercent": "3",
+          "slotOrder": 29,
+          "pageKey": "6-28"
+        },
+        {
+          "name": "Обитель бедолаги",
+          "nameUncertain": false,
+          "dropChancePercent": "5.7",
+          "slotOrder": 30,
+          "pageKey": "6-29"
+        },
+        {
+          "name": "Забытый склеп",
+          "nameUncertain": false,
+          "dropChancePercent": "5.7",
+          "slotOrder": 31,
+          "pageKey": "6-30"
+        },
+        {
+          "name": "Старина Джек",
+          "nameUncertain": false,
+          "dropChancePercent": "5.7",
+          "slotOrder": 32,
+          "pageKey": "6-31"
+        },
+        {
+          "name": "Уродливый Джо",
+          "nameUncertain": false,
+          "dropChancePercent": "12",
+          "slotOrder": 33,
+          "pageKey": "6-32"
+        },
+        {
+          "name": "Унилый сквош",
+          "nameUncertain": false,
+          "dropChancePercent": "12",
+          "slotOrder": 34,
+          "pageKey": "6-33"
+        },
+        {
+          "name": "Зубастый Груд",
+          "nameUncertain": false,
+          "dropChancePercent": "12",
+          "slotOrder": 35,
+          "pageKey": "6-34"
+        }
+      ],
+      "kind": "case",
+      "packSet": "halloween"
+    },
+    {
+      "name": "Unknown",
+      "nameUncertain": false,
+      "pageCaseId": "7",
+      "items": [
+        {
+          "name": "Нагрудник Стража",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "7-xmvjiqxbo"
+        },
+        {
+          "name": "Голова Сегуна",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "7-xmvjis0a5"
+        },
+        {
+          "name": "Мотыга Снежного Оазиса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "7-xmvjis6hb"
+        },
+        {
+          "name": "Булава Айсбергов",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "7-xmvjisjm0"
+        },
+        {
+          "name": "Секатор v5",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "7-xmvjj85ul"
+        },
+        {
+          "name": "Древняя лопата",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "7-xmvjjo61z"
+        },
+        {
+          "name": "Лук Эльфа",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "7-xmvjjomqu"
+        },
+        {
+          "name": "Стрелы Геракла",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "7-xmvjw0yk1"
+        },
+        {
+          "name": "Обработ. несоздаваемым зельем стрела",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "7-xmvjw1j0q"
+        },
+        {
+          "name": "Несоздаваемое туманное зелье",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "7-xmvjw2bc4"
+        },
+        {
+          "name": "Палка отдачи III",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 11,
+          "pageKey": "7-xmvjw3nvj"
+        },
+        {
+          "name": "Золотая кирка",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 12,
+          "pageKey": "7-xmvjw4l8i"
+        },
+        {
+          "name": "Золотое яблоко (проклятие утраты)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 13,
+          "pageKey": "7-xmvjw6rp3"
+        },
+        {
+          "name": "Зачарованное золотое яблоко",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 14,
+          "pageKey": "7-xmvjw76wv"
+        },
+        {
+          "name": "Крюк (починка)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 15,
+          "pageKey": "7-xmvjw8vx9"
+        },
+        {
+          "name": "Ключ от древнего кейса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 16,
+          "pageKey": "7-xmvjw93kb"
+        },
+        {
+          "name": "Коины",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 17,
+          "pageKey": "7-xmvjwbwak"
+        },
+        {
+          "name": "Секрет Фугу",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 18,
+          "pageKey": "7-xmvjwc0vo"
+        },
+        {
+          "name": "Душа",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 19,
+          "pageKey": "7-xmvjwcv2p"
+        },
+        {
+          "name": "Полярная звезда",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 20,
+          "pageKey": "7-xmvjwmc5m"
+        },
+        {
+          "name": "Создание территории",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 21,
+          "pageKey": "7-xmvjwmp2g"
+        },
+        {
+          "name": "Тепловизор",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 22,
+          "pageKey": "7-xmvjwy2n7"
+        },
+        {
+          "name": "Stone",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 23,
+          "pageKey": "7-xmvjwytcb"
+        },
+        {
+          "name": "Прочность IV (кираса)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 24,
+          "pageKey": "7-xmvjx0kny"
+        },
+        {
+          "name": "Прочность IV (шлем)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 25,
+          "pageKey": "7-xmvjx1bnx"
+        },
+        {
+          "name": "Секира Короля Гномов",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 26,
+          "pageKey": "7-xmvjxqfcb"
+        }
+      ],
+      "kind": "other",
+      "packSet": null
+    },
+    {
+      "name": "Кейс Святого Валентина",
+      "nameUncertain": false,
+      "pageCaseId": "umvjj2uf6",
+      "items": [
+        {
+          "name": "Щит преданности",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjj2uf6-xmvjj37nc"
+        },
+        {
+          "name": "Лопата Совместных Мечтаний",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjj2uf6-xmvjjkp5b"
+        },
+        {
+          "name": "Клинок Сердца",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjj2uf6-xmvjjmo8t"
+        },
+        {
+          "name": "Дар Святого Валентина",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjj2uf6-xmvjjmyvi"
+        },
+        {
+          "name": "Шлем Влюбленного Защитника",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjj2uf6-xmvjjzinz"
+        },
+        {
+          "name": "Кираса (Дар) Влюбленного Защитника",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjj2uf6-xmvjk0271"
+        },
+        {
+          "name": "Поножи (Дар) Влюбленного Защитника",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjj2uf6-xmvjk09yl"
+        },
+        {
+          "name": "Ботинки (Дар) Влюбленного Защитника",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjj2uf6-xmvjk0h40"
+        },
+        {
+          "name": "Топор Решимости",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjj2uf6-xmvjk1l07"
+        },
+        {
+          "name": "Мотыга Святого Валентина",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "umvjj2uf6-xmvu4vvma"
+        },
+        {
+          "name": "Посох Теплых Чувств",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 11,
+          "pageKey": "umvjj2uf6-xmvyy5f7w"
+        },
+        {
+          "name": "Удочка Влюбленных",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 12,
+          "pageKey": "umvjj2uf6-xmw959592"
+        }
+      ],
+      "kind": "case",
+      "packSet": "valentine"
+    },
+    {
+      "name": "Пасхальный кролик",
+      "nameUncertain": false,
+      "pageCaseId": "umvjj4bhj",
+      "items": [
+        {
+          "name": "Мотыга Пасхальный культиватор",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjj4bhj-xmvjj4hyw"
+        },
+        {
+          "name": "Молот Весенний Гром",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjj4bhj-xmvjj5h32"
+        },
+        {
+          "name": "Копье Пасхальный Пронзатель",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjj4bhj-xmvjjl8cl"
+        },
+        {
+          "name": "Поножи Пасхального Кролика",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjj4bhj-xmvjju4i1"
+        },
+        {
+          "name": "Удочка Цветных Волн",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjj4bhj-xmvjk2n1n"
+        },
+        {
+          "name": "Щит Весеннего Сияния",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjj4bhj-xmvt11spe"
+        },
+        {
+          "name": "Лопата Кроличья Нора",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjj4bhj-xmvt19hja"
+        },
+        {
+          "name": "Топор Кроличьего Леса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjj4bhj-xmvt1dawd"
+        },
+        {
+          "name": "Пасхальный Стрелок",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjj4bhj-xmvt1ee55"
+        }
+      ],
+      "kind": "case",
+      "packSet": "easter_bunny"
+    },
+    {
+      "name": "Halloween 2024",
+      "nameUncertain": false,
+      "pageCaseId": "umvjj7bna",
+      "items": [
+        {
+          "name": "Тыква Джек",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjj7bna-xmvjj7ltp"
+        },
+        {
+          "name": "Костянной меч",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjj7bna-xmvjj8wiv"
+        },
+        {
+          "name": "Призрачная кирка",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjj7bna-xmvjjg4ll"
+        },
+        {
+          "name": "Кукурузная конфета (мал)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjj7bna-xmvjwdnlj"
+        },
+        {
+          "name": "Кукурузная конфета (бол)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjj7bna-xmvjweflu"
+        },
+        {
+          "name": "Леденец пирог",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjj7bna-xmvjwewyz"
+        },
+        {
+          "name": "Леденец",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjj7bna-xmvjwfios"
+        },
+        {
+          "name": "Зловещее яблоко",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjj7bna-xmvjwh44h"
+        },
+        {
+          "name": "Зловещее хелоун яблоко",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjj7bna-xmvjwhjxk"
+        },
+        {
+          "name": "Золотая морковь",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "umvjj7bna-xmvjwifj1"
+        },
+        {
+          "name": "Бесполезный ящик (ивент)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 11,
+          "pageKey": "umvjj7bna-xmvjwir0n"
+        },
+        {
+          "name": "Бесполезный ящик",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 12,
+          "pageKey": "umvjj7bna-xmvjwj745"
+        },
+        {
+          "name": "Четверное хранилища",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 13,
+          "pageKey": "umvjj7bna-xmvjwjkno"
+        },
+        {
+          "name": "Рога Стража",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 14,
+          "pageKey": "umvjj7bna-xmvjwklul"
+        },
+        {
+          "name": "Ведм. шляпа",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 15,
+          "pageKey": "umvjj7bna-xmvjwkwdr"
+        },
+        {
+          "name": "Рога Демона",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 16,
+          "pageKey": "umvjj7bna-xmvjwl88r"
+        },
+        {
+          "name": "Рога дьявола",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 17,
+          "pageKey": "umvjj7bna-xmvjwllke"
+        }
+      ],
+      "kind": "case",
+      "packSet": "halloween_2024"
+    },
+    {
+      "name": "Снежный кейс",
+      "nameUncertain": false,
+      "pageCaseId": "umvjj9q9t",
+      "items": [
+        {
+          "name": "Мотыга Снежнего Оазиса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjj9q9t-xmvjj9uqn"
+        },
+        {
+          "name": "Булава Айсбергов",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjj9q9t-xmvjje7yn"
+        },
+        {
+          "name": "Штандарт Маленького Пингвина",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjj9q9t-xmvjjfeso"
+        },
+        {
+          "name": "Клык Ледяных Шахт",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjj9q9t-xmvjjgmv1"
+        },
+        {
+          "name": "Олаф Крушитель",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjj9q9t-xmvjjy9p7"
+        },
+        {
+          "name": "Ушанка Маленького Пингвина",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjj9q9t-xmvjjyqsx"
+        },
+        {
+          "name": "Арбалет Ледяного Прицела",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjj9q9t-xmvr8izix"
+        },
+        {
+          "name": "Щит Ледяного Панциря",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjj9q9t-xmvr8jcvd"
+        },
+        {
+          "name": "Удочка Замерзших Вод",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjj9q9t-xmvr8k6p5"
+        },
+        {
+          "name": "Лук Полярного Ветра",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "umvjj9q9t-xmvw98a8y"
+        }
+      ],
+      "kind": "case",
+      "packSet": "little_penguin"
+    },
+    {
+      "name": "Зимний кейс (Санты)",
+      "nameUncertain": false,
+      "pageCaseId": "umvjw53m1",
+      "items": [
+        {
+          "name": "Серебристая борода Санты",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjw53m1-xmvjw5jj0"
+        },
+        {
+          "name": "Печенье Санты",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjw53m1-xmvjw641k"
+        },
+        {
+          "name": "Уголек",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjw53m1-xmvjwa5hf"
+        },
+        {
+          "name": "Ледяной арбалет",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjw53m1-xmvjwuydp"
+        },
+        {
+          "name": "Куртка Санты",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjw53m1-xmvjwwwrq"
+        },
+        {
+          "name": "Штаны Санты",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjw53m1-xmvjwx4fo"
+        },
+        {
+          "name": "Подарочный Рюкзак",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjw53m1-xmvjwxack"
+        },
+        {
+          "name": "Сапоги Санты",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjw53m1-xmvjx1v86"
+        },
+        {
+          "name": "Глазурная Кирка",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjw53m1-xmvjxmt2d"
+        },
+        {
+          "name": "Промерзшие ботинки",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "umvjw53m1-xmvjxv9g6"
+        },
+        {
+          "name": "Рожд. секира",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 11,
+          "pageKey": "umvjw53m1-xmvjy0qa0"
+        },
+        {
+          "name": "Карамельная коса",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 12,
+          "pageKey": "umvjw53m1-xmvjy10my"
+        },
+        {
+          "name": "Корень имбиря",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 13,
+          "pageKey": "umvjw53m1-xmvjy16up"
+        },
+        {
+          "name": "Пряничный крушитель",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 14,
+          "pageKey": "umvjw53m1-xmvjy23do"
+        },
+        {
+          "name": "Имбирный страж",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 15,
+          "pageKey": "umvjw53m1-xmvjy2dgv"
+        },
+        {
+          "name": "Сахарное лезвие",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 16,
+          "pageKey": "umvjw53m1-xmvjy2nsv"
+        },
+        {
+          "name": "Морозное Жало",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 17,
+          "pageKey": "umvjw53m1-xmvw9crdf"
+        },
+        {
+          "name": "Меч снежного стража",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 18,
+          "pageKey": "umvjw53m1-xmvw9d5sx"
+        }
+      ],
+      "kind": "case",
+      "packSet": "christmas"
+    },
+    {
+      "name": "Кейс Годовщины",
+      "nameUncertain": false,
+      "pageCaseId": "umvjwaos7",
+      "items": [
+        {
+          "name": "Чек на флай 5 минут",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjwaos7-xmvjwax3p"
+        },
+        {
+          "name": "Чек на флай 15 минут",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjwaos7-xmvjwb94b"
+        },
+        {
+          "name": "Фонарь Дракона",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjwaos7-xmvjwoluw"
+        },
+        {
+          "name": "Огненные ботинки (понижи)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjwaos7-xmvjwszld"
+        },
+        {
+          "name": "Ботинки годовщины",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjwaos7-xmvjwu3xh"
+        },
+        {
+          "name": "Огненные ботинки (ботинки)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjwaos7-xmvjxvq87"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Мистический кейс (OLD)",
+      "nameUncertain": false,
+      "pageCaseId": "umvjwnoxd",
+      "items": [
+        {
+          "name": "Осколок метеорита",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjwnoxd-xmvjwnvek"
+        },
+        {
+          "name": "Бронежилет",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjwnoxd-xmvjwqpoq"
+        },
+        {
+          "name": "Драконоборец",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjwnoxd-xmvjx6ot5"
+        },
+        {
+          "name": "Антиграв. ботинки",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjwnoxd-xmvjxcokf"
+        },
+        {
+          "name": "Кираса паладина",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjwnoxd-xmvjxfcue"
+        },
+        {
+          "name": "Superfortress",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 6,
+          "pageKey": "umvjwnoxd-xmvjxh3zf"
+        },
+        {
+          "name": "JetPack",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 7,
+          "pageKey": "umvjwnoxd-xmvjxhdh2"
+        },
+        {
+          "name": "Укреп. Крылья",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 8,
+          "pageKey": "umvjwnoxd-xmvjxhnkv"
+        },
+        {
+          "name": "Бульдозер",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 9,
+          "pageKey": "umvjwnoxd-xmvjxkbaf"
+        },
+        {
+          "name": "Секира Безумца (желтая)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 10,
+          "pageKey": "umvjwnoxd-xmvjxkkr0"
+        },
+        {
+          "name": "Секира Безумца (красная)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 11,
+          "pageKey": "umvjwnoxd-xmvjxkucb"
+        },
+        {
+          "name": "Бензопила",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 12,
+          "pageKey": "umvjwnoxd-xmvjxl9ws"
+        },
+        {
+          "name": "Разрушитель Миров",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 13,
+          "pageKey": "umvjwnoxd-xmvjxmemv"
+        },
+        {
+          "name": "Вечный стейк",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 14,
+          "pageKey": "umvjwnoxd-xmvjxtkhc"
+        },
+        {
+          "name": "Соломенная шляпа",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 15,
+          "pageKey": "umvjwnoxd-xmvjxuep5"
+        },
+        {
+          "name": "Бронебойный",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 16,
+          "pageKey": "umvjwnoxd-xmvjxy4wo"
+        },
+        {
+          "name": "Энерг. арбалет Вуки",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 17,
+          "pageKey": "umvjwnoxd-xmvjxygeu"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Зимний ивент 2024",
+      "nameUncertain": false,
+      "pageCaseId": "umvjws0ax",
+      "items": [
+        {
+          "name": "Шлем Матиксонии",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjws0ax-xmvjwscar"
+        },
+        {
+          "name": "Латы Матиксонии",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjws0ax-xmvjxc4ez"
+        },
+        {
+          "name": "Кираса Матиксонии",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 3,
+          "pageKey": "umvjws0ax-xmvjxfx02"
+        },
+        {
+          "name": "Крылья Матиксонии",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 4,
+          "pageKey": "umvjws0ax-xmvjxi1m4"
+        },
+        {
+          "name": "Кирка Матиксонии",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 5,
+          "pageKey": "umvjws0ax-xmvjxlle8"
+        }
+      ],
+      "kind": "case",
+      "packSet": null
+    },
+    {
+      "name": "Кейс Сегуна",
+      "nameUncertain": false,
+      "pageCaseId": "umvjx911e",
+      "items": [
+        {
+          "name": "Копье Сегун (Яри)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 1,
+          "pageKey": "umvjx911e-xmvjx94pm"
+        },
+        {
+          "name": "Лопата Сегун (Цучибэ)",
+          "nameUncertain": false,
+          "dropChancePercent": null,
+          "slotOrder": 2,
+          "pageKey": "umvjx911e-xmvjy1cwv"
+        }
+      ],
+      "kind": "case",
+      "packSet": "shogun"
+    }
+  ]
+}
