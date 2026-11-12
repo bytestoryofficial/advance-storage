@@ -6,3 +6,4 @@ coverage
 **/generated
 packs
 pnpm-lock.yaml
+packages/db/seed
