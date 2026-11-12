@@ -1,0 +1,272 @@
+{
+    components: {
+        "minecraft:custom_model_data": {
+            floats: [1004.0f]
+        },
+        "minecraft:item_name": {
+            color: "white",
+            text: "Shovel"
+        },
+        "minecraft:item_model": "nexo:easterbunny_animated_weapon_set_v4_shovel",
+        "minecraft:lore": ["", {
+            extra: [
+                {
+                    color: "#FFF4D8",
+                    underlined: 0b,
+                    text: "Этот инструмент наполняет ощущением приключений и",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        }, {
+            extra: [
+                {
+                    color: "#FFF4D8",
+                    underlined: 0b,
+                    text: "магии, приглашая вас исследовать загадочные уголки под",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        }, {
+            extra: [
+                {
+                    color: "#FFF4D8",
+                    underlined: 0b,
+                    text: "землей и искать спрятанные сокровища. Она - ваш верный",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        }, {
+            extra: [
+                {
+                    color: "#FFF4D8",
+                    underlined: 0b,
+                    text: "помощник в путешествиях по волшебному миру.",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        }, "", {
+            extra: [
+                {
+                    color: "#E3C5FF",
+                    underlined: 0b,
+                    text: "Предмет из кейса Пасхальный кролик",
+                    bold: 0b,
+                    strikethrough: 0b,
+                    italic: 0b,
+                    obfuscated: 0b
+                }
+            ],
+            text: ""
+        }, {
+            extra: [
+                "for ByteStory для нор"
+            ],
+            text: ""
+        }, {
+            extra: [
+                "от Epuckop13"
+            ],
+            text: ""
+        }, {
+            extra: [
+                "копай копай копай"
+            ],
+            text: ""
+        }],
+        "minecraft:enchantments": {
+            "minecraft:mending": 1,
+            "minecraft:efficiency": 5,
+            "minecraft:unbreaking": 3,
+            "minecraft:silk_touch": 1
+        },
+        "minecraft:custom_name": {
+            extra: [{
+                color: "#FFBFDC",
+                underlined: 0b,
+                text: "Л",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFC1D9",
+                underlined: 0b,
+                text: "о",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFC3D6",
+                underlined: 0b,
+                text: "п",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFC5D3",
+                underlined: 0b,
+                text: "а",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFC8D0",
+                underlined: 0b,
+                text: "т",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFCACD",
+                underlined: 0b,
+                text: "а",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFCCCA",
+                underlined: 0b,
+                text: " ",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFCEC7",
+                underlined: 0b,
+                text: "К",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFD0C4",
+                underlined: 0b,
+                text: "р",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFD2C1",
+                underlined: 0b,
+                text: "о",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFD5BE",
+                underlined: 0b,
+                text: "л",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFD7BB",
+                underlined: 0b,
+                text: "и",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFD9B8",
+                underlined: 0b,
+                text: "ч",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFDBB5",
+                underlined: 0b,
+                text: "ь",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFDDB2",
+                underlined: 0b,
+                text: "я",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFDFAF",
+                underlined: 0b,
+                text: " ",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFE2AC",
+                underlined: 0b,
+                text: "Н",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFE4A9",
+                underlined: 0b,
+                text: "о",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFE6A6",
+                underlined: 0b,
+                text: "р",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }, {
+                color: "#FFE8A3",
+                underlined: 0b,
+                text: "а",
+                bold: 1b,
+                strikethrough: 0b,
+                italic: 0b,
+                obfuscated: 0b
+            }],
+            text: ""
+        },
+        "minecraft:custom_data": {
+            PublicBukkitValues: {
+                "nexo:id": "easterbunny_animated_weapon_set_v4_shovel",
+                "score:usage": 1,
+                "executableitems:ei-id": "easter_bunny_shovel"
+            }
+        }
+    },
+    count: 1,
+    id: "minecraft:netherite_shovel"
+}
