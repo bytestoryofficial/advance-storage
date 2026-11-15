@@ -2,6 +2,10 @@ packages:
   - 'apps/*'
   - 'packages/*'
 
+allowBuilds:
+  '@prisma/engines': false
+  prisma: false
+
 catalog:
   typescript: 6.0.3
   vitest: 5.0.5
