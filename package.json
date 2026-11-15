@@ -12,7 +12,10 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "pnpm -r --if-present typecheck",
-    "test": "pnpm -r --if-present test"
+    "test": "pnpm -r --if-present test",
+    "db:up": "docker compose -f infra/docker-compose.dev.yaml up -d",
+    "db:down": "docker compose -f infra/docker-compose.dev.yaml down",
+    "db:ps": "docker compose -f infra/docker-compose.dev.yaml ps"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
