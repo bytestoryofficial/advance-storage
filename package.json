@@ -15,7 +15,8 @@
     "test": "pnpm -r --if-present test",
     "db:up": "docker compose -f infra/docker-compose.dev.yaml up -d",
     "db:down": "docker compose -f infra/docker-compose.dev.yaml down",
-    "db:ps": "docker compose -f infra/docker-compose.dev.yaml ps"
+    "db:ps": "docker compose -f infra/docker-compose.dev.yaml ps",
+    "db:generate": "pnpm --filter @advance-storage/db generate"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
