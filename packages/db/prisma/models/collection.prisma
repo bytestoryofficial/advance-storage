@@ -1,0 +1,56 @@
+// =========================== ENUMS =========================== //
+
+enum CollectionKind {
+  case
+  set
+  event
+  other
+}
+
+enum EditionStatus {
+  active
+  legacy
+}
+
+// =========================== MODELS =========================== //
+
+model Collection {
+  id        String         @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  slug      String         @unique
+  nameRu    String?        @map("name_ru")
+  kind      CollectionKind
+  createdAt DateTime       @default(now()) @map("created_at") @db.Timestamptz
+
+  editions CollectionEdition[]
+
+  @@map("collection")
+}
+
+model CollectionEdition {
+  id           String        @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  collectionId String        @map("collection_id") @db.Uuid
+  editionNo    Int           @map("edition_no")
+  status       EditionStatus @default(active)
+  createdAt    DateTime      @default(now()) @map("created_at") @db.Timestamptz
+
+  collection Collection    @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  items      EditionItem[]
+
+  @@unique([collectionId, editionNo])
+  @@map("collection_edition")
+}
+
+model EditionItem {
+  editionId    String @map("edition_id") @db.Uuid
+  itemId       String @map("item_id") @db.Uuid
+  dropChanceBp Int?   @map("drop_chance_bp")
+  slotOrder    Int    @map("slot_order")
+
+  edition CollectionEdition @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  item    Item              @relation(fields: [itemId], references: [id], onDelete: Restrict)
+
+  @@id([editionId, itemId])
+  @@unique([editionId, slotOrder])
+  @@index([itemId])
+  @@map("edition_item")
+}

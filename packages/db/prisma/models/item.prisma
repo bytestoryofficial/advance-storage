@@ -1,0 +1,51 @@
+// =========================== ENUMS =========================== //
+
+enum ItemKind {
+  weapon
+  tool
+  armor
+  shield
+  key
+  case_container
+  cosmetic
+  decor
+  event_item
+  trophy
+  other
+}
+
+enum ModelKind {
+  flat
+  three_d @map("3d")
+  unknown
+}
+
+// =========================== MODELS =========================== //
+
+model Item {
+  id        String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  nexoId    String?   @unique @map("nexo_id")
+  eiId      String?   @unique @map("ei_id")
+  nameRu    String?   @map("name_ru")
+  kind      ItemKind
+  modelRef  String?   @map("model_ref")
+  modelKind ModelKind @default(unknown) @map("model_kind")
+  animated  Boolean   @default(false)
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz
+  updatedAt DateTime  @updatedAt @map("updated_at") @db.Timestamptz
+
+  aliases  ItemAlias[]
+  editions EditionItem[]
+
+  @@map("item")
+}
+
+model ItemAlias {
+  alias  String @id
+  itemId String @map("item_id") @db.Uuid
+
+  item Item @relation(fields: [itemId], references: [id], onDelete: Cascade)
+
+  @@index([itemId])
+  @@map("item_alias")
+}
