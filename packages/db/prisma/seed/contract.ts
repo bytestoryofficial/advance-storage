@@ -42,7 +42,7 @@ export const legacyItemSchema = z.object({
   baseItem: z.string().min(1),
   modelRef: z.string().nullable(),
   modelKind: modelKindSchema,
-  animated: z.boolean,
+  animated: z.boolean(),
 });
 
 /** One case (or set) from the pack, with its items in display order. */
