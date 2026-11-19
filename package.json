@@ -17,7 +17,8 @@
     "db:down": "docker compose -f infra/docker-compose.dev.yaml down",
     "db:ps": "docker compose -f infra/docker-compose.dev.yaml ps",
     "db:generate": "pnpm --filter @advance-storage/db generate",
-    "db:migrate": "pnpm --filter @advance-storage/db migrate:dev --create-only --name init_catalog"
+    "db:migrate": "pnpm --filter @advance-storage/db migrate:dev --create-only --name init_catalog",
+    "api:dev": "pnpm --filter @advance-storage/api dev"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
