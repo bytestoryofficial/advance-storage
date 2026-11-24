@@ -22,21 +22,23 @@ const SHUTDOWN_TIMEOUT_MS: number = 8_000;
 
 // ============================================ SERVER ============================================
 
-connectRedis();
+let server: ServerType | undefined;
 
-const server: ServerType = serve(
-  { fetch: createApp().fetch, port: env.PORT },
-  (info: AddressInfo): void => {
+// Redis connects in the background: the API serves from Postgres until the cache is ready.
+const main = (): void => {
+  connectRedis();
+
+  server = serve({ fetch: createApp().fetch, port: env.PORT }, (info: AddressInfo): void => {
     logger.info({ port: info.port, env: env.NODE_ENV }, 'API is listening');
-  },
-);
-
-/** Stops accepting connections and resolves when in-flight requests finish. */
-const closeServer = (): Promise<void> => {
-  return new Promise<void>((resolve, reject) => {
-    server.close((error?: Error): void => (error ? reject(error) : resolve()));
   });
 };
+
+/** Stops accepting connections and resolves when in-flight requests finish. */
+const closeServer = (): Promise<void> =>
+  new Promise<void>((resolve, reject) => {
+    if (!server) return resolve();
+    server.close((error?: Error): void => (error ? reject(error) : resolve()));
+  });
 
 // ============================================ SHUTDOWN LOGIC ============================================
 
@@ -98,3 +100,7 @@ process.on('uncaughtException', (error: Error): void => {
   logger.fatal({ err: error }, 'uncaught exception');
   process.exit(1);
 });
+
+// ============================================ START ============================================
+
+main();
