@@ -18,7 +18,10 @@
     "db:ps": "docker compose -f infra/docker-compose.dev.yaml ps",
     "db:generate": "pnpm --filter @advance-storage/db generate",
     "db:migrate": "pnpm --filter @advance-storage/db migrate:dev --create-only --name init_catalog",
-    "api:dev": "pnpm --filter @advance-storage/api dev"
+    "api:dev": "pnpm --filter @advance-storage/api dev",
+    "db:test:up": "docker compose -f infra/docker-compose.dev.yaml up -d --wait postgres-test",
+    "db:test:down": "docker compose -f infra/docker-compose.dev.yaml stop postgres-test",
+    "test:api": "pnpm --filter @advance-storage/api test"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

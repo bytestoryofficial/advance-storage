@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const LOGGER_ENUM = z.enum(['fatal', 'error', 'warn', 'info', 'debug', 'trace']);
+const LOGGER_ENUM = z.enum(['fatal', 'error', 'warn', 'info', 'debug', 'trace', 'silent']);
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),

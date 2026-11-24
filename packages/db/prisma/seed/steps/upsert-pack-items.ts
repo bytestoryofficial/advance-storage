@@ -34,6 +34,15 @@ export const upsertPackItems = async (tx: TTx, items: IPackItem[]): Promise<TNex
     ...new Map(items.map((item: IPackItem): [string, IPackItem] => [item.nexoId, item])).values(),
   ];
 
+  const nexoIds: string[] = uniqueItems.map((item: IPackItem): string => item.nexoId);
+  const namesRu: string[] = uniqueItems.map((item: IPackItem): string => item.nameRu);
+  const kinds: string[] = uniqueItems.map((item: IPackItem): string => item.kind);
+  const modelRefs: (string | null)[] = uniqueItems.map(
+    (item: IPackItem): string | null => item.modelRef,
+  );
+  const modelKinds: string[] = uniqueItems.map((item: IPackItem): string => item.modelKind);
+  const animated: boolean[] = uniqueItems.map((item: IPackItem): boolean => item.animated);
+
   const rows: IItemIdRow[] = await tx.$queryRaw<IItemIdRow[]>`
     INSERT INTO item (nexo_id, name_ru, kind, model_ref, model_kind, animated, updated_at)
     SELECT
@@ -45,12 +54,12 @@ export const upsertPackItems = async (tx: TTx, items: IPackItem[]): Promise<TNex
       t.animated,
       now()
     FROM unnest(
-      ${items.map((item: IPackItem): string => item.nexoId)}::text[],
-      ${items.map((item: IPackItem): string => item.nameRu)}::text[],
-      ${items.map((item: IPackItem): string => item.kind)}::text[],
-      ${items.map((item: IPackItem): string | null => item.modelRef)}::text[],
-      ${items.map((item: IPackItem): string => item.modelKind)}::text[],
-      ${items.map((item: IPackItem): boolean => item.animated)}::boolean[]
+      ${nexoIds}::text[],
+      ${namesRu}::text[],
+      ${kinds}::text[],
+      ${modelRefs}::text[],
+      ${modelKinds}::text[],
+      ${animated}::boolean[]
     ) AS t(nexo_id, name_ru, kind, model_ref, model_kind, animated)
     ON CONFLICT (nexo_id) DO UPDATE SET
       kind       = EXCLUDED.kind,

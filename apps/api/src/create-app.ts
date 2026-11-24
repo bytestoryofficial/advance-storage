@@ -2,7 +2,7 @@ import { requestId } from 'hono/request-id';
 import { Hono } from 'hono';
 
 import { requestLogger } from './middleware/request-logger.js';
-import { onError } from './middleware/error-handler.js';
+import { notFound, onError } from './middleware/error-handler.js';
 
 import { collectionRoutes } from './modules/collections/collections.routes.js';
 import { itemRoutes } from './modules/items/items.routes.js';
@@ -19,6 +19,7 @@ export const createApp = (): Hono<IAppEnv> => {
 
   app.use(requestId());
   app.use(requestLogger);
+  app.notFound(notFound);
   app.onError(onError);
 
   app.route('/api/items', itemRoutes);

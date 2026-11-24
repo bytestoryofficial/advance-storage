@@ -12,7 +12,8 @@
     "migrate:status": "prisma migrate status",
     "studio": "prisma studio",
     "typecheck": "tsc --noEmit",
-    "seed": "prisma db seed"
+    "seed": "prisma db seed",
+    "test": "vitest run"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.1",
@@ -26,6 +27,8 @@
     "prisma": "^7.10.1",
     "tsx": "^4.23.15",
     "typescript": "catalog:",
+    "vite": "^8.3.8",
+    "vitest": "catalog:",
     "zod": "catalog:"
   }
 }

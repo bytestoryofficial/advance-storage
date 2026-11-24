@@ -4,5 +4,5 @@
     "lib": ["ES2023"],
     "types": ["node"]
   },
-  "include": ["src", "seed", "prisma", "prisma.config.ts"]
+  "include": ["src", "seed", "prisma", "prisma.config.ts", "vitest.config.ts", "test"]
 }

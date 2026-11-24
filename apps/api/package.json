@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch --env-file=.env src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@advance-storage/db": "workspace:*",
@@ -20,6 +22,8 @@
     "@types/node": "catalog:",
     "pino-pretty": "^13.2.0",
     "tsx": "^4.23.15",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "^8.3.8",
+    "vitest": "catalog:"
   }
 }
