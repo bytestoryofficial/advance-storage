@@ -1,5 +1,7 @@
 import { prisma } from '@advance-storage/db';
 
+import { cached, invalidate } from '../../lib/cache.js';
+
 import {
   LIST_SELECT,
   type IItemDetails,
@@ -10,6 +12,16 @@ import {
 
 import type { IListItemsQuery } from './items.schemas.js';
 
+// ============================================ CONSTANTS ============================================
+
+/** The catalog changes only on seed or admin edits; writes call `invalidateItems`. */
+const CATALOG_TTL_SECONDS: number = 300;
+
+/** Single source of truth for item cache keys; bump `v1` when the item DTO changes shape. */
+const itemKeys = {
+  detail: (id: string): string => `catalog:item:v1:${id}`,
+} as const;
+
 // ============================================ HELPERS ============================================
 
 const bpToPercent = (bp: number | null): number | null => (bp === null ? null : bp / 100);
@@ -17,7 +29,52 @@ const bpToPercent = (bp: number | null): number | null => (bp === null ? null : 
 const getMore = (items: IItemListEntry[], hasMore: boolean): string | null =>
   hasMore ? (items.at(-1)?.id ?? null) : null;
 
-// ============================================ QUERIES ============================================
+// ============================================ LOADERS (DATABASE) ============================================
+
+/**
+ * One item with its aliases and every case edition it drops from,
+ * sorted by collection slug, then edition number.
+ *
+ * @returns `null` when no item has this id; the route turns that into a 404.
+ */
+const loadItemById = async (id: string): Promise<IItemDetails | null> => {
+  const row = await prisma.item.findUnique({
+    where: { id },
+    select: {
+      ...LIST_SELECT,
+      eiId: true,
+      aliases: { select: { alias: true }, orderBy: { alias: 'asc' } },
+      editions: {
+        orderBy: [{ edition: { collection: { slug: 'asc' } } }, { edition: { editionNo: 'asc' } }],
+        select: {
+          slotOrder: true,
+          dropChanceBp: true,
+          edition: {
+            select: { editionNo: true, collection: { select: { slug: true, nameRu: true } } },
+          },
+        },
+      },
+    },
+  });
+
+  if (!row) return null;
+
+  const { aliases, editions, ...item } = row;
+
+  return {
+    ...item,
+    aliases: aliases.map((entry: { alias: string }): string => entry.alias),
+    drops: editions.map((entry: (typeof editions)[number]): IItemDrop => ({
+      collectionSlug: entry.edition.collection.slug,
+      collectionNameRu: entry.edition.collection.nameRu,
+      editionNo: entry.edition.editionNo,
+      slotOrder: entry.slotOrder,
+      dropChancePercent: bpToPercent(entry.dropChanceBp),
+    })),
+  };
+};
+
+// ============================================ QUERIES (cached) ============================================
 
 /**
  * Lists catalog items with filters and keyset pagination.
@@ -58,44 +115,16 @@ export const listItems = async (query: IListItemsQuery): Promise<IItemsPage> => 
 };
 
 /**
- * One item with its aliases and every case edition it drops from,
- * sorted by collection slug, then edition number.
- *
- * @returns `null` when no item has this id; the route turns that into a 404.
+ * One item with its aliases and drops; cached per id.
+ * A missing id (`null`) is not cached.
  */
-export const getItemById = async (id: string): Promise<IItemDetails | null> => {
-  const row = await prisma.item.findUnique({
-    where: { id },
-    select: {
-      ...LIST_SELECT,
-      eiId: true,
-      aliases: { select: { alias: true }, orderBy: { alias: 'asc' } },
-      editions: {
-        orderBy: [{ edition: { collection: { slug: 'asc' } } }, { edition: { editionNo: 'asc' } }],
-        select: {
-          slotOrder: true,
-          dropChanceBp: true,
-          edition: {
-            select: { editionNo: true, collection: { select: { slug: true, nameRu: true } } },
-          },
-        },
-      },
-    },
-  });
+export const getItemById = (id: string): Promise<IItemDetails | null> => {
+  return cached(itemKeys.detail(id), CATALOG_TTL_SECONDS, () => loadItemById(id));
+};
 
-  if (!row) return null;
+// ============================================ INVALIDATION ============================================
 
-  const { aliases, editions, ...item } = row;
-
-  return {
-    ...item,
-    aliases: aliases.map((entry: { alias: string }): string => entry.alias),
-    drops: editions.map((entry: (typeof editions)[number]): IItemDrop => ({
-      collectionSlug: entry.edition.collection.slug,
-      collectionNameRu: entry.edition.collection.nameRu,
-      editionNo: entry.edition.editionNo,
-      slotOrder: entry.slotOrder,
-      dropChancePercent: bpToPercent(entry.dropChanceBp),
-    })),
-  };
+/** Drops cached item details after a write (admin edit, seed). */
+export const invalidateItems = async (...ids: string[]): Promise<void> => {
+  await invalidate(...ids.map(itemKeys.detail));
 };

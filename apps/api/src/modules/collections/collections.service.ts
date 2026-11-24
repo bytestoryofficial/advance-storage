@@ -1,6 +1,9 @@
-import { prisma } from '@advance-storage/db';
+import { CollectionKind, prisma } from '@advance-storage/db';
+
+import { cached, invalidate } from '../../lib/cache.js';
 
 import type { IListCollectionsQuery } from './collections.schemas.js';
+
 import {
   type IListCollectionEntry,
   type ICollectionsPage,
@@ -9,21 +12,25 @@ import {
   type ICollectionEdition,
 } from './collections.types.js';
 
+// ============================================ CONSTANTS ============================================
+
+const CATALOG_TTL_SECONDS: number = 300;
+
+/** Single source of truth for cache keys; bump `v1` when a collection DTO changes shape. */
+const collectionKeys = {
+  list: (kind: CollectionKind | 'all'): string => `catalog:collections:v1:${kind}`,
+  detail: (slug: string): string => `catalog:collection:v1:${slug}`,
+};
+
 // ============================================ HELPERS ============================================
 
 /** Item count of the newest edition (highest `editionNo`); `0` if the collection has none. */
 const latestItemCount = (editions: ReadonlyArray<{ _count: { items: number } }>): number =>
   editions[0]?._count.items ?? 0;
 
-// ============================================ QUERIES ============================================
+// ============================================ LOADERS (DATABASE) ============================================
 
-/**
- * Lists all collections, sorted by slug, with the item count of their newest edition.
- *
- * No pagination on purpose: there are only a few hundred collections.
- * Add keyset pagination (as in `listItems`) if that ever grows past ~1000.
- */
-export const listCollections = async (query: IListCollectionsQuery): Promise<ICollectionsPage> => {
+const loadCollections = async (query: IListCollectionsQuery): Promise<ICollectionsPage> => {
   const rows = await prisma.collection.findMany({
     where: {
       kind: query.kind,
@@ -50,19 +57,16 @@ export const listCollections = async (query: IListCollectionsQuery): Promise<ICo
   });
 
   return {
-    collections: rows.map(({ editions, ...collection }): IListCollectionEntry => ({
-      ...collection,
-      itemCount: latestItemCount(editions),
-    })),
+    collections: rows.map(
+      ({ editions, ...collection }: (typeof rows)[number]): IListCollectionEntry => ({
+        ...collection,
+        itemCount: latestItemCount(editions),
+      }),
+    ),
   };
 };
 
-/**
- * One collection with all its editions, newest first.
- *
- * @returns `null` when no collection has this slug; the route turns that into a 404.
- */
-export const getCollectionById = async (slug: string): Promise<ICollectionDetails | null> => {
+const loadCollectionBySlug = async (slug: string): Promise<ICollectionDetails | null> => {
   const row = await prisma.collection.findUnique({
     where: { slug },
     select: {
@@ -93,4 +97,41 @@ export const getCollectionById = async (slug: string): Promise<ICollectionDetail
       itemCount: entry._count.items,
     })),
   };
+};
+
+// ============================================ QUERIES (CACHE) ============================================
+
+/**
+ * Lists collections; cached per `kind` for {@link CATALOG_TTL_SECONDS}.
+ * Searches (`q`) skip the cache: every search string would be a new key.
+ */
+export const listCollections = (query: IListCollectionsQuery): Promise<ICollectionsPage> => {
+  if (query.q) return loadCollections(query);
+
+  const keys = collectionKeys.list(query.kind ?? 'all');
+
+  return cached(keys, CATALOG_TTL_SECONDS, () => loadCollections(query));
+};
+
+/**
+ * One collection with its editions; cached per slug.
+ * A missing slug (`null`) is not cached, so a new collection appears immediately.
+ */
+export const getCollectionBySlug = (slug: string): Promise<ICollectionDetails | null> => {
+  return cached(collectionKeys.detail(slug), CATALOG_TTL_SECONDS, () => loadCollectionBySlug(slug));
+};
+
+// ============================================ INVALIDATION ============================================
+
+/**
+ * Drops cached collection data after a write (admin edit, seed).
+ * Lists are dropped for every kind, since one change can move a collection between them.
+ *
+ * @param slugs - Changed collections; their detail entries are dropped too.
+ */
+export const invalidateCollections = async (...slugs: string[]): Promise<void> => {
+  const kinds: (CollectionKind | 'all')[] = [...Object.values(CollectionKind), 'all'];
+  const listKeys: string[] = kinds.map(collectionKeys.list);
+
+  await invalidate(...listKeys, ...slugs.map(collectionKeys.detail));
 };
