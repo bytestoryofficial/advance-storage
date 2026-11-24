@@ -4,6 +4,7 @@ import { Hono } from 'hono';
 import { requestLogger } from './middleware/request-logger.js';
 import { onError } from './middleware/error-handler.js';
 
+import { itemRoutes } from './modules/items/items.routes.js';
 import { healthRoutes } from './routes/health.js';
 
 import type { IAppEnv } from './types.js';
@@ -19,6 +20,7 @@ export const createApp = (): Hono<IAppEnv> => {
   app.use(requestLogger);
   app.onError(onError);
 
+  app.route('/api/items', itemRoutes);
   app.route('/health', healthRoutes);
 
   return app;

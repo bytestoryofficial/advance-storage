@@ -1,5 +1,7 @@
 import { STATUS_CODES } from 'node:http';
 
+import type { IValidationIssue } from './validate.js';
+
 // ============================================ TYPES ============================================
 
 export interface IErrorBody {
@@ -7,6 +9,7 @@ export interface IErrorBody {
     code: string;
     message: string;
     requestId: string;
+    details?: IValidationIssue[];
   };
 }
 
@@ -22,6 +25,11 @@ export const codeFor = (status: number): string => {
 };
 
 /** Builds an {@link IErrorBody}. */
-export const errorBody = (code: string, message: string, requestId: string): IErrorBody => {
-  return { error: { code, message, requestId } };
+export const errorBody = (
+  code: string,
+  message: string,
+  requestId: string,
+  details?: IValidationIssue[],
+): IErrorBody => {
+  return { error: { code, message, requestId, ...(details && { details }) } };
 };
