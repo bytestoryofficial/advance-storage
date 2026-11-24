@@ -3,6 +3,8 @@ import { Hono, type Next } from 'hono';
 import { prisma } from '@advance-storage/db';
 
 import { isShuttingDown, SHUTTING_DOWN_STATUS } from '../lib/shutdown-state.js';
+import { redis } from '../lib/redis.js';
+
 import type { IAppEnv } from '../types.js';
 
 // ============================================ CONSTANTS ============================================
@@ -41,20 +43,24 @@ const pingDatabase = async (): Promise<void> => {
  *
  * Type is inferred on purpose: an explicit `Hono<IAppEnv>` would erase the route types used by `hc`.
  */
-export const healthRoutes: Hono<IAppEnv> = new Hono<IAppEnv>()
+export const healthRoutes = new Hono<IAppEnv>()
   .use(async (context, next: Next) => {
     await next();
     context.header('Cache-Control', 'no-store');
   })
   .get('/live', (context) => context.json({ status: 'ok' }))
   .get('/ready', async (context) => {
-    if (isShuttingDown()) return context.json({ status: SHUTTING_DOWN_STATUS });
+    if (isShuttingDown()) return context.json({ status: SHUTTING_DOWN_STATUS }, 503);
+
+    const cache = redis.isReady ? 'up' : 'down';
 
     try {
       await pingDatabase();
-      return context.json({ status: 'ok', db: 'up' });
     } catch (error: unknown) {
       context.get('logger').warn({ error }, 'readiness check failed');
-      return context.json({ status: 'error', db: 'down' }, 503);
+      return context.json({ status: 'unavailable', db: 'down', cache }, 503);
     }
+
+    const status = cache === 'up' ? 'ok' : 'degraded';
+    return context.json({ status: status, db: 'up', cache });
   });

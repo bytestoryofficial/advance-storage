@@ -6,20 +6,23 @@ import { prisma } from '@advance-storage/db';
 
 import { createApp } from './create-app.js';
 
+import { isShuttingDown, markShuttingDown } from './lib/shutdown-state.js';
+import { closeRedis, connectRedis } from './lib/redis.js';
 import { logger } from './lib/logger.js';
 
 import { env } from './env.js';
-import { isShuttingDown, markShuttingDown } from './lib/shutdown-state.js';
 
 // ============================================ CONSTANTS ============================================
 
 /** Time for the load balancer to see `/ready` = 503 and stop sending traffic. */
-const DRAIN_DELAY_MS: number = 3_000;
+const DRAIN_DELAY_MS: number = env.NODE_ENV === 'production' ? 3_000 : 0;
 
 /** Max time to finish in-flight requests on shutdown. Docker kills the process after 10 s. */
 const SHUTDOWN_TIMEOUT_MS: number = 8_000;
 
 // ============================================ SERVER ============================================
+
+connectRedis();
 
 const server: ServerType = serve(
   { fetch: createApp().fetch, port: env.PORT },
@@ -63,8 +66,18 @@ const shutdown = async (signal: NodeJS.Signals): Promise<void> => {
   } catch (error: unknown) {
     logger.error({ err: error }, 'failed to close HTTP server');
     exitCode = 1;
-  } finally {
-    await prisma.$disconnect();
+  }
+
+  const results: PromiseSettledResult<void>[] = await Promise.allSettled([
+    closeRedis(),
+    prisma.$disconnect(),
+  ]);
+
+  for (const result of results) {
+    if (result.status === 'rejected') {
+      logger.error({ err: result.reason }, 'failed to close a dependency');
+      exitCode = 1;
+    }
   }
 
   logger.info('shutdown completed!');
