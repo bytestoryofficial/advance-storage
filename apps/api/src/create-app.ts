@@ -22,8 +22,8 @@ export const createApp = (): Hono<IAppEnv> => {
   app.notFound(notFound);
   app.onError(onError);
 
-  app.route('/api/items', itemRoutes);
-  app.route('/api/collections', collectionRoutes);
+  app.route('/api/v1/items', itemRoutes);
+  app.route('/api/v1/collections', collectionRoutes);
   app.route('/health', healthRoutes);
 
   return app;

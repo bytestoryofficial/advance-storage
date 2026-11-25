@@ -5,7 +5,7 @@ import { validate } from '../../lib/validate.js';
 
 import { collectionSlugParamsSchema, listCollectionsQuerySchema } from './collections.schemas.js';
 import type { ICollectionDetails, ICollectionsPage } from './collections.types.js';
-import { getCollectionById, listCollections } from './collections.service.js';
+import { getCollectionBySlug, listCollections } from './collections.service.js';
 
 import { type IAppEnv } from '../../types.js';
 
@@ -21,7 +21,7 @@ export const collectionRoutes = new Hono<IAppEnv>()
   })
   .get('/:slug', validate('param', collectionSlugParamsSchema), async (context) => {
     const { slug } = context.req.valid('param');
-    const collection: ICollectionDetails | null = await getCollectionById(slug);
+    const collection: ICollectionDetails | null = await getCollectionBySlug(slug);
 
     if (!collection) throw new HTTPException(404, { message: `Collection ${slug} not found` });
 
