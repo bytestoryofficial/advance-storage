@@ -2,14 +2,7 @@ import { zValidator } from '@hono/zod-validator';
 import type { ValidationTargets } from 'hono';
 import { z } from 'zod';
 
-import { errorBody, type IErrorBody } from './http-error.js';
-
-// ============================================ TYPES ============================================
-
-export interface IValidationIssue {
-  path: string;
-  message: string;
-}
+import { errorBody, type IErrorBody, type IValidationIssue } from './http-error.js';
 
 // ============================================ PUBLIC API ============================================
 

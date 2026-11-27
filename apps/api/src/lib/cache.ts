@@ -3,7 +3,7 @@ import { redis } from './redis.js';
 
 // ============================================ CONSTANTS ============================================
 
-const KEY_PREFIX: string = 'as:';
+export const KEY_PREFIX: string = 'as:';
 
 /** Up to +10 % random TTL, so keys written together don't all expire in the same second. */
 const TTL_JITTER_RATIO: number = 0.1;
