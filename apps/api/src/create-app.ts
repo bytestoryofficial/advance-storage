@@ -4,8 +4,9 @@ import { bodyLimit } from 'hono/body-limit';
 import { cors } from 'hono/cors';
 import { Hono } from 'hono';
 
-import { requestLogger } from './middleware/request-logger.js';
 import { notFound, onError } from './middleware/error-handler.js';
+import { requestLogger } from './middleware/request-logger.js';
+import { loadSession } from './middleware/session.js';
 
 import { errorBody } from './lib/http-error.js';
 import {
@@ -40,6 +41,7 @@ const MAX_BODY_BYTES: number = 100 * 1024;
 const RATE_LIMIT_WINDOW_SECONDS: number = 60;
 const REQUEST_ID_HEADER = 'X-Request-Id';
 const API_V1 = '/api/v1';
+const API_BASE_ALL = '/api/*';
 
 // ============================================ APP ============================================
 
@@ -93,7 +95,7 @@ export const createApp = (options: ICreateAppOptions = {}): Hono<IAppEnv> => {
   const rateLimitStore: IRateLimitStore = options.rateLimitStore ?? redisRateLimitStore;
 
   app.use(
-    '/api/*',
+    API_BASE_ALL,
     rateLimit({
       name: 'api',
       limit: options.rateLimitMax ?? env.RATE_LIMIT_MAX,
@@ -112,6 +114,8 @@ export const createApp = (options: ICreateAppOptions = {}): Hono<IAppEnv> => {
       failClosed: true,
     }),
   );
+
+  app.use(API_BASE_ALL, loadSession);
 
   app.route(`${API_V1}/auth`, authRoutes);
   app.route(`${API_V1}/items`, itemRoutes);

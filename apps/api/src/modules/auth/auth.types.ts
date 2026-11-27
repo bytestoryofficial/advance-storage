@@ -10,3 +10,10 @@ export interface INewSession {
   token: string;
   expiresAt: Date;
 }
+
+export interface IValidSession {
+  sessionId: string;
+  user: IAuthUser;
+  expiresAt: Date;
+  renewed: boolean;
+}

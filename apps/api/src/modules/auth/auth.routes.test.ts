@@ -5,6 +5,7 @@ import { prisma } from '@advance-storage/db';
 import { createMemoryRateLimitStore, type IRateLimitStore } from '../../lib/rate-limit.js';
 import type { IErrorBody } from '../../lib/http-error.js';
 
+import { generateToken, hashToken } from './helpers/token.js';
 import { hashPassword } from './helpers/password.js';
 import { createApp } from '../../create-app.js';
 
@@ -16,17 +17,33 @@ import { resetDb } from '../../../test/reset-db.js';
 
 const BASE: string = '/api/v1/auth';
 const PASSWORD: string = 'correct horse battery staple';
+const DAY_MS: number = 24 * 60 * 60 * 1000;
 
 const downStore: IRateLimitStore = { hit: (): Promise<null> => Promise.resolve(null) };
 
-const createUser = async (username: string = 'Maks_Pro'): Promise<void> => {
-  await prisma.user.create({
+const createUser = async (username: string = 'Maks_Pro'): Promise<string> => {
+  const user = await prisma.user.create({
     data: {
       username,
       usernameKey: username.toLowerCase(),
       passwordHash: await hashPassword(PASSWORD),
     },
   });
+
+  return user.id;
+};
+
+const getMe = (app: ReturnType<typeof createApp>, cookie?: string) =>
+  app.request(`${BASE}/me`, { headers: cookie ? { Cookie: cookie } : {} });
+
+/** Inserts a session directly, with any expiry; returns the cookie for it. */
+const sessionCookieExpiringIn = async (userId: string, ms: number): Promise<string> => {
+  const token: string = generateToken();
+  await prisma.session.create({
+    data: { tokenHash: hashToken(token), userId, expiresAt: new Date(Date.now() + ms) },
+  });
+
+  return `session=${token}`;
 };
 
 /** A fresh app per test, so rate-limit counters never leak between tests. */
@@ -151,5 +168,68 @@ describe('POST /auth/logout', () => {
   it('succeeds without a cookie, so logging out twice is never an error', async () => {
     const res: Response = await post(newApp(), '/logout');
     expect(res.status).toBe(204);
+  });
+});
+
+describe('GET /auth/me', () => {
+  it('answers 401 without a session cookie', async () => {
+    const res: Response = await getMe(newApp());
+    expect(res.status).toBe(401);
+  });
+
+  it('returns the logged-in user, and does not touch the cookie of a fresh session', async () => {
+    await createUser();
+    const app = newApp();
+
+    const login: Response = await post(app, '/login', { username: 'Maks_Pro', password: PASSWORD });
+    const me: Response = await getMe(app, cookieFrom(login));
+
+    expect(me.status).toBe(200);
+    expect(((await me.json()) as { user: IAuthUser }).user.username).toBe('Maks_Pro');
+    expect(me.headers.get('set-cookie')).toBeNull();
+  });
+
+  it('answers 401 after logout, even with the old cookie', async () => {
+    await createUser();
+    const app = newApp();
+
+    const cookie: string = cookieFrom(
+      await post(app, '/login', { username: 'Maks_Pro', password: PASSWORD }),
+    );
+    await post(app, '/logout', undefined, cookie);
+
+    const me: Response = await getMe(app, cookie);
+    expect(me.status).toBe(401);
+  });
+
+  it('rejects an expired session, deletes it and clears the cookie', async () => {
+    const userId: string = await createUser();
+    const cookie: string = await sessionCookieExpiringIn(userId, -DAY_MS);
+
+    const me: Response = await getMe(newApp(), cookie);
+
+    expect(me.status).toBe(401);
+    expect(await prisma.session.count()).toBe(0);
+    expect(me.headers.get('set-cookie')).toContain('Max-Age=0');
+  });
+
+  it('extends a session with less than 15 days left and re-sends the cookie', async () => {
+    const userId: string = await createUser();
+    const cookie: string = await sessionCookieExpiringIn(userId, 5 * DAY_MS);
+
+    const me: Response = await getMe(newApp(), cookie);
+
+    expect(me.status).toBe(200);
+    expect(me.headers.get('set-cookie')).toMatch(/^session=.+Expires=/);
+
+    const session = await prisma.session.findFirstOrThrow();
+    expect(session.expiresAt.getTime()).toBeGreaterThan(Date.now() + 29 * DAY_MS);
+  });
+
+  it('ignores a cookie with an unknown token and clears it', async () => {
+    const me: Response = await getMe(newApp(), `session=${generateToken()}`);
+
+    expect(me.status).toBe(401);
+    expect(me.headers.get('set-cookie')).toContain('Max-Age=0');
   });
 });

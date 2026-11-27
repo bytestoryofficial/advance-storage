@@ -1,6 +1,8 @@
 import { HTTPException } from 'hono/http-exception';
 import { Hono } from 'hono';
 
+import { requireUser } from '../../middleware/session.js';
+
 import { checkCredentials } from './auth.service.js';
 import { loginBodySchema } from './auth.schemas.js';
 
@@ -50,4 +52,5 @@ export const authRoutes = new Hono<IAppEnv>()
     }
 
     return context.body(null, 204);
-  });
+  })
+  .get('/me', requireUser, (context) => context.json({ user: context.get('user') }));
