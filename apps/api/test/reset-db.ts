@@ -4,5 +4,6 @@ import { prisma } from '@advance-storage/db';
 export const resetDb = async (): Promise<void> => {
   await prisma.$executeRaw`
     TRUNCATE edition_item, item_alias, collection_edition, collection, item CASCADE
+    TRUNCATE session, "user", edition_item, item_alias, collection_edition, collection, item CASCADE
   `;
 };

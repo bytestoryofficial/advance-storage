@@ -1,0 +1,38 @@
+// =========================== AUTH ENUMS =========================== //
+
+enum UserRole {
+  member
+  admin
+}
+
+// =========================== AUTH MODELS =========================== //
+
+/// A clan member's account.
+model User {
+  id           String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  username     String
+  usernameKey  String   @unique @map("username_key")
+  passwordHash String   @map("password_hash")
+  role         UserRole @default(member)
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt    DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  sessions Session[]
+
+  @@map("user")
+}
+
+/// A logged-in device. The cookie holds a random token;
+model Session {
+  id        String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  tokenHash String   @unique @map("token_hash")
+  userId    String   @map("user_id") @db.Uuid
+  expiresAt DateTime @map("expires_at") @db.Timestamptz(3)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+  @@map("session")
+}
