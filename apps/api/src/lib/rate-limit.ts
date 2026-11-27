@@ -33,9 +33,12 @@ export interface IRateLimitStore {
 }
 
 export interface IRateLimitOptions {
+  /** Separates counters of different limiters in the same store, e.g. `api`, `login`. */
+  name: string;
   limit: number;
   windowSeconds: number;
   store: IRateLimitStore;
+  failClosed?: boolean;
 }
 
 // ============================================ STORES ============================================
@@ -105,10 +108,18 @@ export const rateLimit = (options: IRateLimitOptions) => {
     const window: number = Math.floor(nowSeconds / options.windowSeconds);
     const resetSeconds: number = options.windowSeconds - (nowSeconds % options.windowSeconds);
 
-    const hitKey: string = `${clientIp(context)}:${window}`;
+    const hitKey: string = `${options.name}:${clientIp(context)}:${window}`;
     const count: number | null = await options.store.hit(hitKey, options.windowSeconds);
 
-    if (count === null) return next();
+    if (count === null) {
+      if (!options.failClosed) return next();
+
+      const requestId: string = context.get('requestId');
+      return context.json(
+        errorBody('SERVICE_UNAVAILABLE', 'Temporarily unavailable, try again later', requestId),
+        503,
+      );
+    }
 
     context.header(RATE_LIMIT_HEADER, String(options.limit));
     context.header(RATE_REMAINING_HEADER, String(Math.max(0, options.limit - count)));

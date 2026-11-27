@@ -21,7 +21,8 @@
     "api:dev": "pnpm --filter @advance-storage/api dev",
     "db:test:up": "docker compose -f infra/docker-compose.dev.yaml up -d --wait postgres-test",
     "db:test:down": "docker compose -f infra/docker-compose.dev.yaml stop postgres-test",
-    "test:api": "pnpm --filter @advance-storage/api test"
+    "test:api": "pnpm --filter @advance-storage/api test",
+    "create-admin": "pnpm --filter @advance-storage/api create-admin"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

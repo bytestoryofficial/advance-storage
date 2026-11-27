@@ -7,7 +7,8 @@
     "dev": "tsx watch --env-file=.env src/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "create-admin": "tsx --env-file=.env src/scripts/create-admin.ts"
   },
   "dependencies": {
     "@advance-storage/db": "workspace:*",

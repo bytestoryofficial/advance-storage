@@ -20,6 +20,7 @@ import {
 
 import { collectionRoutes } from './modules/collections/collections.routes.js';
 import { itemRoutes } from './modules/items/items.routes.js';
+import { authRoutes } from './modules/auth/auth.routes.js';
 import { healthRoutes } from './routes/health.js';
 
 import type { IAppEnv } from './types.js';
@@ -30,6 +31,7 @@ import { env } from './env.js';
 export interface ICreateAppOptions {
   rateLimitStore?: IRateLimitStore;
   rateLimitMax?: number;
+  loginRateLimitMax?: number;
 }
 
 // ============================================ CONSTANTS ============================================
@@ -37,6 +39,7 @@ export interface ICreateAppOptions {
 const MAX_BODY_BYTES: number = 100 * 1024;
 const RATE_LIMIT_WINDOW_SECONDS: number = 60;
 const REQUEST_ID_HEADER = 'X-Request-Id';
+const API_V1 = '/api/v1';
 
 // ============================================ APP ============================================
 
@@ -87,17 +90,32 @@ export const createApp = (options: ICreateAppOptions = {}): Hono<IAppEnv> => {
     }),
   );
 
+  const rateLimitStore: IRateLimitStore = options.rateLimitStore ?? redisRateLimitStore;
+
   app.use(
     '/api/*',
     rateLimit({
+      name: 'api',
       limit: options.rateLimitMax ?? env.RATE_LIMIT_MAX,
       windowSeconds: RATE_LIMIT_WINDOW_SECONDS,
-      store: options.rateLimitStore ?? redisRateLimitStore,
+      store: rateLimitStore,
     }),
   );
 
-  app.route('/api/v1/items', itemRoutes);
-  app.route('/api/v1/collections', collectionRoutes);
+  app.use(
+    `${API_V1}/auth/login`,
+    rateLimit({
+      name: 'login',
+      limit: options.loginRateLimitMax ?? 10,
+      windowSeconds: 15 * RATE_LIMIT_WINDOW_SECONDS,
+      store: rateLimitStore,
+      failClosed: true,
+    }),
+  );
+
+  app.route(`${API_V1}/auth`, authRoutes);
+  app.route(`${API_V1}/items`, itemRoutes);
+  app.route(`${API_V1}/collections`, collectionRoutes);
   app.route('/health', healthRoutes);
 
   app.notFound(notFound);
