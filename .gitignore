@@ -22,6 +22,7 @@ temp.txt
 .env
 .env.*
 !.env.example
+!.env.test
 
 # Tests & coverage
 coverage/
